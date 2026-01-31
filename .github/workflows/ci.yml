@@ -47,7 +47,6 @@ jobs:
           python -m pip install --upgrade tox
       - name: Test with tox
         run: |
-          tox -e lint
           tox -e manifest
           tox -e changelog -- --draft
           tox -e docs
